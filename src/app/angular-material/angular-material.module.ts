@@ -1,18 +1,35 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
-import {MatListModule} from '@angular/material/list';
-import {MatDividerModule} from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
 
 @NgModule({
   imports: [
-    CommonModule,
     MatListModule,
-    MatDividerModule
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
   ],
   exports: [
     MatListModule,
-    MatDividerModule
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
   ]
 })
 export class AngularMaterialModule { }
